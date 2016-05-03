@@ -1,0 +1,129 @@
+/*RESTAURAR ESTILOS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background: #00BA9F;
+    border-bottom: 1px solid #42786D;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+}
+
+.logout{
+    height: 50px;
+    width: 15%;
+    border-right: 1px solid #00AE97;
+    float: left;
+    box-sizing: border-box;
+}
+
+.menu{
+    height: 50px;
+    width: 15%;
+    border-left: 1px solid #03B09A;
+    float: right;
+    box-sizing: border-box;
+}
+
+nav h1{
+    float: left;
+    width: 70%;
+    text-align: center;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    border-right: 2px solid #15C7B1;
+    border-left: 2px solid #15C7B1;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+.fecha{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    background: #626260;
+    float: left;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    color: #fff;
+    z-index: 9999;
+    
+}
+
+.contenedor{
+    float: left;
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    background: #DFDFDF;
+    height: 100%;
+}
+
+.mensaje{
+    float: left;
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 10px;
+    background: #8DC9A3;
+    border-right: 1px solid #91BFA3;
+    border-bottom: 1px solid #91BFA3;
+    border-left: 1px solid #91BFA3;
+    border-top: 1px solid #BDD4C4;
+    border-radius: 3px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.mensaje h2{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.mensaje p{
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+
+.pendiente{
+    float: left;
+    width: 94%;
+    margin-left: 3%;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,2);
+    margin-top: 20px;
+    height: 50px;
+}
+
+.pendiente input{
+    height: 40px;
+    width: 88%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    float: left;
+    background: #F5F5F5;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>APP ACTIVIDAD 1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <nav>
+            <div class="lpgout">
+                <img src="#">
+            </div>
+            <h1>PENDIENTES</h1>
+            <div class="menu">
+                <img src="#">
+            </div>
+        </nav>
+        <div class="fecha">
+            1/MARZO/2016
+        </div>
+        <div class="contenedor" id="contenedor-pendientes">
+            <div class="mensaje">
+                <h2>Felicidades</h2>
+                <p>No tienes ningun pendiente el dia de hoy.</p>
+                <p>¿Mucha calma? puedes agregar mas pendientes abajo.</p>
+            </div>
+            
+            <div class="pendiente">
+                <input type="text" placeholder="Agregar pendiente aqui..." id="agregar-pendiente">
+                <button onclick="guardarP()"><img src="#"></button>
+            </div>
+        </div>
+        
+        <script>
+            function guardarP(){
+                pendiente = document.getElementById('agregar-pendiente').value;
+                pendientesGuardados = localStorage.getItem('pendiente');
+                totalPendientes = pendientesGuardados + pendiente + '-';
+                localStorage.setItem('pendiente', totalPendientes);
+                document.getElementById('agregar-pendiente').value;
+                //pendienteGuardado = localStorage.getItem('pendiente');
+                nuevoPendiente = "<div class='pendiente'><p>"+pendiente+"</P></div>";
+                document.getElementById('contenedor-pendientes').innerHTML+=nuevoPendiente
+            }
+            //ESCUCHADOR DE EVENTOS
+            
+            window.addEventListener('load',cargada,true);
+            function cargada(){
+                pendientes = localStorage.getItem('pendiente');
+                pendientePartido = pendientes.split('-');
+            var i = 0;
+            while(i<pendientePartido.length-1){
+                contenedorPendientes = document.getElementById('contenedor-pendientes');
+                contenedorPendientes.innerHTML += "<div class='pendiente'><p>"+pendientePartido[i]+"</p></div>"
+                i++
+            }
+            }
+        </script>
+    </body>
+</html>
